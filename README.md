@@ -114,16 +114,34 @@ or check [Postman collection](docs/udagram-final.postman_collection.json).
 ![EB - Applications](docs/images/deployment_screenshot/eb_applications.png)
 14. Run `eb open`
 ![EB - Open](docs/images/deployment_screenshot/eb_open.png)
-15. If the code is modified after deployment, you can run `eb deploy`
-```shell
-Uploading udagram-image-filter/app-4999-211130_104022.zip to S3. This may take a while.
-Upload Complete.
-2021-11-30 08:40:25    INFO    Environment update is starting.      
-2021-11-30 08:40:29    INFO    Deploying new version to instance(s).
-2021-11-30 08:40:52    INFO    Instance deployment completed successfully.
-2021-11-30 08:40:56    INFO    New application version was deployed to running EC2 instances.
-2021-11-30 08:40:56    INFO    Environment update completed successfully.
-```
+15. (Optional) If the code is modified after deployment, you can run `eb deploy`
+   ```shell
+   Uploading udagram-image-filter/app-4999-211130_104022.zip to S3. This may take a while.
+   Upload Complete.
+   2021-11-30 08:40:25    INFO    Environment update is starting.      
+   2021-11-30 08:40:29    INFO    Deploying new version to instance(s).
+   2021-11-30 08:40:52    INFO    Instance deployment completed successfully.
+   2021-11-30 08:40:56    INFO    New application version was deployed to running EC2 instances.
+   2021-11-30 08:40:56    INFO    Environment update completed successfully.
+   ```
+16. (Optional) If you want to remove all resources created and terminate, you can run `eb terminate udagram`
+   ```shell
+   The environment "udagram" and all associated instances will be terminated.
+   To confirm, type the environment name: udagram
+   2021-11-30 10:31:34    INFO    terminateEnvironment is starting.
+   2021-11-30 10:31:51    INFO    Deleted CloudWatch alarm named: awseb-e-jgqrbr3sp3-stack-AWSEBCloudwatchAlarmHigh-1XZITLF9XWKXL 
+   2021-11-30 10:31:52    INFO    Deleted CloudWatch alarm named: awseb-e-jgqrbr3sp3-stack-AWSEBCloudwatchAlarmLow-1NN7RXH6R6AXY 
+   2021-11-30 10:31:52    INFO    Deleted Auto Scaling group policy named: arn:aws:autoscaling:us-east-1:766159390272:scalingPolicy:8993c584-6b12-47bb-9fce-c3eb09e1e153:autoScalingGroupName/awseb-e-jgqrbr3sp3-stack-AWSEBAutoScalingGroup-9FPD3HFFS9E2:policyName/awseb-e-jgqrbr3sp3-stack-AWSEBAutoScalingScaleUpPolicy-DB950NHEMGV0
+   2021-11-30 10:31:52    INFO    Deleted Auto Scaling group policy named: arn:aws:autoscaling:us-east-1:766159390272:scalingPolicy:ce54e87f-dbad-4d27-bcc9-1d7e6212b9c5:autoScalingGroupName/awseb-e-jgqrbr3sp3-stack-AWSEBAutoScalingGroup-9FPD3HFFS9E2:policyName/awseb-e-jgqrbr3sp3-stack-AWSEBAutoScalingScaleDownPolicy-1IBH4VNPOYJSN
+   2021-11-30 10:31:52    INFO    Waiting for EC2 instances to terminate. This may take a few minutes.
+   2021-11-30 10:35:56    INFO    Deleted Auto Scaling group named: awseb-e-jgqrbr3sp3-stack-AWSEBAutoScalingGroup-9FPD3HFFS9E2
+   2021-11-30 10:35:56    INFO    Deleted load balancer named: awseb-e-j-AWSEBLoa-1KW6NWGOYC50W
+   2021-11-30 10:36:12    INFO    Deleted Auto Scaling launch configuration named: awseb-e-jgqrbr3sp3-stack-AWSEBAutoScalingLaunchConfiguration-RVS8VSPS9GDM
+   2021-11-30 10:36:12    INFO    Deleted security group named: awseb-e-jgqrbr3sp3-stack-AWSEBSecurityGroup-YHVFNBCA3JQM
+   2021-11-30 10:36:12    INFO    Deleted security group named: sg-0c01b50527d5590ea
+   2021-11-30 10:36:29    INFO    Deleting SNS topic for environment udagram.
+   2021-11-30 10:36:30    INFO    terminateEnvironment completed successfully.
+   ```
 
 ## Local - Getting Started
 
