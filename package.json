@@ -1,8 +1,12 @@
 {
-  "name": "udacity-c2-image-filter",
+  "name": "udagram-image-filtering-microservice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=10.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf www/ || true",
@@ -11,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grutt/udacity-c2-image-filter.git"
+    "url": "git+https://github.com/Sasa94s/udagram-image-filtering-microservice.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/grutt/udacity-c2-image-filter/issues"
+    "url": "https://github.com/Sasa94s/udagram-image-filtering-microservice/issues"
   },
-  "homepage": "https://github.com/grutt/udacity-c2-image-filter#readme",
+  "homepage": "https://github.com/Sasa94s/udagram-image-filtering-microservice#readme",
   "devDependencies": {
     "@types/bluebird": "^3.5.33",
     "@types/express": "^4.17.0",
