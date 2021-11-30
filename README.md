@@ -18,6 +18,8 @@ AWS EB URL: http://udagram.eba-gxhup9an.us-east-1.elasticbeanstalk.com/
 Test API through this [link](http://udagram.eba-gxhup9an.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://sasa94s.github.io/deploy-a-static-website-on-aws/docs/images/website-homepage.png), 
 or check [Postman collection](docs/udagram-final.postman_collection.json).
 
+![Udagram - Example](docs/images/udagram_example)
+
 **Note:** 
 > 30/11/2021: Website can be accessed through AWS with limited access. 
 > (Deployment status can be found [here](docs/images/deployment_screenshot))
