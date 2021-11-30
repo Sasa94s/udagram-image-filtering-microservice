@@ -114,6 +114,16 @@ or check [Postman collection](docs/udagram-final.postman_collection.json).
 ![EB - Applications](docs/images/deployment_screenshot/eb_applications.png)
 14. Run `eb open`
 ![EB - Open](docs/images/deployment_screenshot/eb_open.png)
+15. If the code is modified after deployment, you can run `eb deploy`
+```shell
+Uploading udagram-image-filter/app-4999-211130_104022.zip to S3. This may take a while.
+Upload Complete.
+2021-11-30 08:40:25    INFO    Environment update is starting.      
+2021-11-30 08:40:29    INFO    Deploying new version to instance(s).
+2021-11-30 08:40:52    INFO    Instance deployment completed successfully.
+2021-11-30 08:40:56    INFO    New application version was deployed to running EC2 instances.
+2021-11-30 08:40:56    INFO    Environment update completed successfully.
+```
 
 ## Local - Getting Started
 
